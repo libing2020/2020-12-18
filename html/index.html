@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 490px;
+            margin-top: 20px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./font_2128491_lyz9ustmion/iconfont.css">
+    <link rel="stylesheet" href="../css/shouye2.css">
+    <link rel="stylesheet" href="../css/tongpe.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../swiper/swiper.css">
+    <script src="../js/cookie.js"></script>
+
+    <div class="header">
+        <div class="header-top">
+            <div class="top-left">
+                <img src="../img/top1_03.jpg" alt="">
+                <span><a href="./denglu.html" class="text">登录</a></span>
+                <span><a href="./zhuce.html">注册</a></span>
+                <span class="iconfont">&#xe641;</span>
+                <span>(0)</span>
+            </div>
+            <div class="top-right">
+                <span><a href="">消息</a></span>
+                <span><a href="">我的李宁</a></span>
+            </div>
+            <!-- <div class="clear"></div> -->
+        </div>
+        <div class="header-end">
+            <ul>
+                <li id="logo"><a href=""><img src="../img/alogo_03.jpg" alt=""></a>|</li>
+                <li><a href="">所有分类<span class="iconfont">&#xe617;</span></a>
+
+                </li>
+                <li><a href="">男子<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">女子<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">男童<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">女童<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">系列<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">韦德<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">新品<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">中国李宁<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">反伍系列<span class="iconfont">&#xe617;</span></a>|</li>
+                <li><a href="">更多品牌<span class="iconfont">&#xe617;</span></a></li>
+            </ul>
+            <div class="header-end-right">
+                <span>发现</span>
+                <input type="text">
+            </div>
+        </div>
+        <div id="down">
+            <ul>
+                <li></li>
+                <li>
+                    <h1>男鞋</h1>
+                    <p>
+                        <span>跑步鞋</span><br />
+                        <span>篮球鞋</span><br />
+                        <span>运动时尚鞋</span><br />
+                        <span>训练鞋鞋</span><br />
+                        <span>羽毛球鞋</span><br />
+                        <span>户外鞋</span><br />
+                        <span>凉鞋/拖鞋</span><br />
+                    </p>
+                </li>
+                <li>
+                    <h1>男鞋</h1>
+                    <p>
+                        <span>跑步鞋</span><br />
+                        <span>篮球鞋</span><br />
+                        <span>运动时尚鞋</span><br />
+                        <span>训练鞋鞋</span><br />
+                        <span>羽毛球鞋</span><br />
+                        <span>户外鞋</span><br />
+                        <span>凉鞋/拖鞋</span><br />
+                    </p>
+                </li>
+                <li>
+                    <h1>男鞋</h1>
+                    <p>
+                        <span>跑步鞋</span><br />
+                        <span>篮球鞋</span><br />
+                        <span>运动时尚鞋</span><br />
+                        <span>训练鞋鞋</span><br />
+                        <span>羽毛球鞋</span><br />
+                        <span>户外鞋</span><br />
+                        <span>凉鞋/拖鞋</span><br />
+                    </p>
+                </li>
+                <li>
+                    <h1>男鞋</h1>
+                    <p>
+                        <span>跑步鞋</span><br />
+                        <span>篮球鞋</span><br />
+                        <span>运动时尚鞋</span><br />
+                        <span>训练鞋鞋</span><br />
+                        <span>羽毛球鞋</span><br />
+                        <span>户外鞋</span><br />
+                        <span>凉鞋/拖鞋</span><br />
+                    </p>
+                </li>
+                <li>
+                    <h1>男鞋</h1>
+                    <p>
+                        <span>跑步鞋</span><br />
+                        <span>篮球鞋</span><br />
+                        <span>运动时尚鞋</span><br />
+                        <span>训练鞋鞋</span><br />
+                        <span>羽毛球鞋</span><br />
+                        <span>户外鞋</span><br />
+                        <span>凉鞋/拖鞋</span><br />
+                    </p>
+                </li>
+                <li>
+                    <h1>男鞋</h1>
+                    <p>
+                        <span>跑步鞋</span><br />
+                        <span>篮球鞋</span><br />
+                        <span>运动时尚鞋</span><br />
+                        <span>训练鞋鞋</span><br />
+                        <span>羽毛球鞋</span><br />
+                        <span>户外鞋</span><br />
+                        <span>凉鞋/拖鞋</span><br />
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 头结束 -->
+
+    <div class="show">
+        <div class='photo'>
+            <div id='carousel-example-generic' class='carousel slide' data-ride='carousel'>
+
+                <!--轮播图片-->
+                <div class='carousel-inner' role='listbox'>
+                    <div class='item active'>
+                        <a href='./list.html'><img src='../img/kv_xw.jpg' alt='...'></a>
+                    </div>
+                    <div class='item'>
+                        <a href='./list.html'><img src='../img/kv_d.jpg' alt='...'></a>
+                    </div>
+                    <div class='item'>
+                        <a href='./list.html'><img src='../img/kv_cba.jpg' alt='...'></a>
+                    </div>
+                    <div class='item'>
+                        <a href='./list.html'><img src='../img/fd_kv.jpg' alt='...'></a>
+                    </div>
+                    <div class='item'>
+                        <a href='./list.html'><img src='../img/pc_02.jpg' alt='...'></a>
+                    </div>
+                </div>
+
+                <!--轮播控制器-->
+                <a class='left carousel-control' href='#carousel-example-generic' role='button' data-slide='prev'>
+                    <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+                    <span class='sr-only'>Previous</span>
+                </a>
+                <a class='right carousel-control' href='#carousel-example-generic' role='button' data-slide='next'>
+                    <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+                    <span class='sr-only'>Next</span>
+                </a>
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </div>
+    <!-- 轮播图结束 -->
+
+
+    <div class="center">
+        <div class="main">
+            <div class="container">
+                <img src="../img/images/shouye_03.jpg" class="img1">
+                <div class="container1">
+                    <p>
+                        <span>潮流典范 酷炫好券</span><br>
+                        <span>使用时间：2020.12.14-2020.12.19(部分商品除外)</span>
+                    </p>
+                    <img src="../img/images/shouye_06.jpg" alt="">
+                </div>
+                <div class="container2">
+                    <img src="../img/images/shouye_12.jpg" alt="">
+                    <img src="../img/images/shouye_10.jpg" alt="">
+                    <img src="../img/images/shouye_12.jpg" alt="">
+                </div>
+                <div class="container3">
+                    <img src="../img/images/shouye_16.jpg" alt="">
+                </div>
+                <div class="container4">
+                    <p>
+                        <span>李宁B品特卖专享</span><br>
+                        <span>使用时间：12月13日-12月20日</span>
+                    </p>
+                    <div class="container4-end">
+                        <dl>
+                            <dt><img src="../img/images/dl_19.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/dl_21.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/dl_23.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/dl_28.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/dl_29.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/dl_30.jpg" alt=""></dt>
+                        </dl>
+                        <!-- <p>查看更多>></p> -->
+                    </div>
+                </div>
+                <div class="swiper-container">
+                    <!-- Swiper 图片 -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../img/images/lun_03.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/images/lun_05.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/aaaa1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/aaaaaaa1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/aaaa1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/aaaaaaa1.png" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="container5">
+                    <p>
+                        <span id="nan">男子</span>
+                        <span id="nv">女子</span>
+                    </p>
+                    <div class="container5-end">
+                        <dl>
+                            <dt><img src="../img/images/nan_03.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_05.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_07.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_09.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_11.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_03.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_05.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_07.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_09.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_11.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_03.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_05.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_07.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_09.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nan_11.jpg" alt=""></dt>
+                        </dl>
+                    </div>
+                    <div class="container5-nv">
+                        <dl>
+                            <dt><img src="../img/images/nv_03.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_05.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_06.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_08.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_10.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_03.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_05.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_06.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_08.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_10.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_03.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_05.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_06.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_08.jpg" alt=""></dt>
+                        </dl>
+                        <dl>
+                            <dt><img src="../img/images/nv_10.jpg" alt=""></dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 中间完 -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-top-box">
+                <img src="../img/aphone_03.jpg" alt="">
+                <p>
+                    <span>获取帮助</span><br />
+                    <span>联系我们</span>
+                    <span>团购vip</span>
+                </p>
+            </div>
+            <div class="footer-top-box">
+                <img src="../img/aphone_03.jpg" alt="">
+                <p>
+                    <span>获取帮助</span><br />
+                    <span>联系我们</span>
+                    <span>团购vip</span>
+                </p>
+            </div>
+            <div class="footer-top-box">
+                <img src="../img/aphone_03.jpg" alt="">
+                <p>
+                    <span>获取帮助</span><br />
+                    <span>联系我们</span>
+                    <span>团购vip</span>
+                </p>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>
+                <span>温馨提示：近日有不法分子假冒+4006100011冒充李宁官方客服人员进行电话诈骗，请您提高警惕，注意保护个人账户信息，切勿泄漏他人。如遇类似问题，请勿回拨来电号码，直接拨打李宁客服电话400-610-0011询问。</span><br />
+                <span> 沪ICP备14035278号-2 © 1990-2020 李宁（中国）体育用品有限公司版权所有</span>
+                <br />
+                <span>
+                    关于李宁 法律声明 投资者关系 Investor Relations 特许经营 工商执照 客服热线
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="ding">
+        <p>
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/show_bar_1.png" alt="">
+        </p>
+        <p class="p2">
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/my_lining_1.png" alt="">
+        </p>
+        <p class="p3">
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/show_bar_1.png" alt="">
+        </p>
+        <p class="p4">
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/account_1.png" alt="">
+        </p>
+        <p class="p5">
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/collect_1.png" alt="">
+        </p>
+        <p class="p6">
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/view_1.png" alt="">
+        </p>
+        <p class="p7">
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/service_1.png" alt="">
+        </p class="p8">
+        <p>
+            <img src="http://cdn.lining.com/shop/lining/theme/xth2/images/sidebar/scan_ground.png" alt="">
+        </p>
+        <p>
+            <a class="back-top" href='javascript:scroll(0,0)'><span class="top1">回到顶部</span></a>
+        </p>
+        <div class="ning">我的李宁</div>
+        <div class="che">购物车</div>
+        <div class="qian">我的资产</div>
+        <div class="cang">我的收藏</div>
+        <div class="lan">最近浏览</div>
+        <div class="fu">客服</div>
+            
+    </div>
+    <script src="../js/swiper.js"></script>
+    <script src="../bootstrap/js/jquery-1.11.0.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../swiper/swiper.js"></script>
+    <script>
+        var h1 = document.querySelector('.header-end')
+        var ul = h1.querySelector('ul')
+        var dn = document.querySelector('#down')
+        var header = document.querySelector('.header-top')
+        var text = document.querySelector('.text')
+        var name1 = getCookie('name')
+        //   console.log(name1)
+        //判断当前值是否存在
+        if (name1) {
+            //把账号赋值给span
+            text.innerHTML = decodeURI(name1)
+        }
+
+        ul.onmouseover = function () {
+            dn.style.display = 'block'
+        }
+        dn.onmousemove = function () {
+            dn.style.display = 'block'
+        }
+        dn.onmouseout = function () {
+            dn.style.display = 'none'
+        }
+        header.onmouseover = function () {
+            dn.style.display = 'none'
+        }
+
+        //     var nan = document.querySelector('#nan');
+        //    var nv = document.querySelector('#nv')
+        //    console.log(nan.nv)
+        var con = document.querySelector('.container5')
+        // console.log(con)
+        var p = con.querySelector('p')
+        // console.log(p)
+        var nan = p.querySelector('#nan')
+        var nv = p.querySelector('#nv')
+        var end = con.querySelector('.container5-end')
+        var container5Nv = con.querySelector('.container5-nv')
+        console.log(end, container5Nv)
+        // console.log(nan,nv)
+
+        nv.onmousemove = function () {
+            nan.style.background = '#ffffff'
+            nan.style.color = '#000000'
+            nv.style.background = '#ce4138'
+            nv.style.color = '#fff'
+            end.style.display = 'none'
+            container5Nv.style.display = 'block'
+            container5Nv.style.display = 'flex'
+        }
+        nan.onmousemove = function () {
+            nv.style.background = '#ffffff'
+            nv.style.color = '#000000'
+            nan.style.background = '#ce4138'
+            nan.style.color = '#fff'
+            container5Nv.style.display = 'none'
+            end.style.display = 'block'
+            end.style.display = 'flex'
+        }
+
+
+        //获取回到顶部
+        var top1 = document.querySelector('.top1')
+        console.log(top1)
+        var a;
+        //给window对象绑定滚动事件
+        window.onscroll = function () {
+            //获取滚动距离
+            a = document.body.scrollTop || document.documentElement.scrollTop
+            //判断滚动距离
+            if (a > 200) {
+                //显示按钮对象
+                top1.style.display = 'block'
+            } else {
+                top1.style.display = 'none'
+            }
+        }
+
+        //给按钮绑定点击事件
+       /*  top1.onclick = function () {
+            var dsq = setInterval(function () {
+                //判断滚动距离是否大于0
+                if (a <= 0) {
+                    clearInterval(dsq)
+                    return
+                }
+                //重新设置滚动距离
+                document.documentElement.scrollTop = a - 10
+            })
+        } */
+
+
+        var ning = document.querySelector('.ning')
+    var p2 = document.querySelector('.p2')
+    // console.log(p2) 
+    p2.onmouseover = function () {
+        ning.style.display = 'block'
+    }
+    
+    p2.onmouseleave=function(){
+         ning.style.display='none'
+     }   
+    
+     var che = document.querySelector('.che')
+     var p3 = document.querySelector('.p3')
+     p3.onmouseover = function () {
+        che.style.display = 'block'
+    }
+    
+    p3.onmouseleave=function(){
+         che.style.display='none'
+     }
+     
+     var qian = document.querySelector('.qian')
+     var p4 = document.querySelector('.p4')
+     p4.onmouseover = function () {
+        qian.style.display = 'block'
+    }
+    
+    p4.onmouseleave=function(){
+         qian.style.display='none'
+     }
+
+     var cang = document.querySelector('.cang')
+     var p5 = document.querySelector('.p5')
+     p5.onmouseover = function () {
+        cang.style.display = 'block'
+    }
+    
+    p5.onmouseleave=function(){
+         cang.style.display='none'
+     }
+
+     var lan = document.querySelector('.lan')
+     var p6 = document.querySelector('.p6')
+     p6.onmouseover = function () {
+        lan.style.display = 'block'
+    }
+    
+    p6.onmouseleave=function(){
+         lan.style.display='none'
+     }
+
+     var fu = document.querySelector('.fu')
+     var p7 = document.querySelector('.p7')
+     p7.onmouseover = function () {
+        fu.style.display = 'block'
+    }
+    
+    p7.onmouseleave=function(){
+         fu.style.display='none'
+     }
+
+        //小轮播
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            slidesPerGroup: 3,
+            loop: true, // 循环模式选项
+            loopFillGroupWithBlank: true,
+            //自动轮播
+            /*   autoplay:{
+                  delay:2000,
+                  disableOnInteraction: false,
+              }, */
+            /*  // 如果需要分页器
+             pagination: {
+             el: '.swiper-pagination',
+             clickable:true,
+             }, */
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+        for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+            mySwiper.pagination.bullets[i].onmouseover = function () {
+                this.click();
+            };
+        }
+        mySwiper.params.pagination.clickable = true;
+        //此外还需要重新初始化pagination
+        mySwiper.pagination.destroy()
+        mySwiper.pagination.init()
+        mySwiper.pagination.bullets.eq(0).addClass('swiper-pagination-bullet-active');
+
+
+   
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-color: #ccc;
+}
+.box{
+    width: 1000px;
+    margin: 100px auto;
+    background-color:#fff ;
+    height: 800px;
+}
+.box h1{
+    width: 800px;
+    height: 80px;
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+input{
+    width: 475px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+form{
+    margin-left:260px ;
+}
+button{
+    width: 475px;
+    height: 50px;
+    background-color: #ee2737;
+    color: #fff;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+form a{
+    color: #ee2737;
+}
+form span{
+    display: inline-block;
+    margin-bottom: 20px;
+}

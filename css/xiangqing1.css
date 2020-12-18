@@ -1,0 +1,130 @@
+.main{
+    width: 1240px;
+    margin: 0 auto;
+}
+.big{
+    /* position: relative; */
+    /* background-color: red; */
+    height: 430px;
+    box-sizing: border-box;
+    width: 1175px;
+    margin: 0 auto;
+}
+.leftBox{
+    width: 400px;
+    height: 400px;
+     position: relative;
+   /*  top: 30px;
+    left: 150px;  */
+    margin-top: 30px;
+    /* margin-left: 150px; */
+    float: left;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.leftBox img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+.mark{
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.rightBox{
+    width: 400px;
+    height: 400px;
+    /* border: 1px solid #ccc; */
+    position: absolute;
+    float: left;
+    left: 660px;
+    top: 30px;
+    overflow: hidden;
+    display: none;
+}
+.rightBox img{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    overflow: hidden;
+}
+.xiang{
+    width: 700px;
+    height: 400px;
+    /* border: 1px solid #ccc; */
+    margin-left: 560px;
+    margin-top: 100px;
+}
+.xiang p {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.xiang p span{
+    color: #000;
+    font-size: 20px;
+}
+.xiang p span a{
+    color: #ff0000;
+    font-size: 14px;
+}
+.xiang ul{
+    width: 595px;
+    height: 171px;
+    margin-left: 50px;
+    background-color: #ccc;
+    margin-top: 10px;
+    line-height: 50px;
+}
+.xiang ul li{
+    font-size: 16px;
+    margin-left: 30px;
+}
+.xiang ul li s{
+    margin-left: 30px;
+}
+.xiang ul li a{
+    font-size:24px ;
+    font-weight: bold;
+    color: #ee2b3f;
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: none;
+}
+.xiang b{
+    margin-left: 50px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+.xiang b span{
+    display: inline-block;
+    border: 1px solid #000;
+    margin-left: 12px;
+}
+.xiang button{
+    margin-left: 50px;
+    width: 180px;
+    height: 55px;
+    margin-top: 50px;
+}
+.xiang button:nth-of-type(1){
+    background-color: #ee2737;
+    color: #fff;
+    font-size: 16px;
+}
+.xiang button:nth-of-type(2){
+    background-color: #303030;
+    color: #fff;
+    font-size: 16px;
+}
+.li img{
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 400px;
+}
